@@ -1392,6 +1392,16 @@ Transform:
   - {fileID: 1765198732}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1364716664 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7962676357306237775, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+  m_PrefabInstance: {fileID: 4298072590198601466}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1364716665 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 3643747908976589428, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+  m_PrefabInstance: {fileID: 4298072590198601466}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1416394804
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +2252,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: DesktopCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8240130929598393273, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+      propertyPath: reticleSprite
+      value: 
+      objectReference: {fileID: 1364716665}
+    - target: {fileID: 8240130929598393273, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+      propertyPath: spriteDistance
+      value: 1.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 8240130929598393273, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+      propertyPath: reticleAnimator
+      value: 
+      objectReference: {fileID: 1364716664}
+    - target: {fileID: 8240130929598393273, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
+      propertyPath: ReticleInteractionLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7236058116715409048, guid: bb2c0d8f254a720468ae8624ada5cfc7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
