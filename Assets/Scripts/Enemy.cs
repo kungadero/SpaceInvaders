@@ -16,7 +16,9 @@ public class Enemy : MonoBehaviour
     protected string destroyAnimationName = "Destroy";
     [SerializeField]
     private string destroySoundName = "asteroid_explode";
-    public Transform Target {set {Target = value;}}
+    [SerializeField]
+    private string appearSoundName;
+    public Transform Target {set {target = value;}}
     protected enum State {Active, Dead}
     protected State currentState;
     private void Awake()
@@ -27,13 +29,14 @@ public class Enemy : MonoBehaviour
     }
     public virtual void OnEnable()
     {
+        SoundManager.instance.Play(appearSoundName);
         health.InitializeHealth();
         currentState = State.Active;
     }
     public virtual void Destroy()
     {
-    health.InitializeHealth();
-    currentState=State.Active;
+    StopAllCoroutines();
+    StartCoroutine(DestroyCoroutine());
     }
     private IEnumerator DestroyCoroutine()
     {

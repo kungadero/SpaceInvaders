@@ -45,5 +45,6 @@ public class Asteroid : Enemy
         Vector3 direction = Random.onUnitSphere;
         float distance = Random.Range(distanceToTarget, distanceToTarget + 5f);
         transform.position = target.position + direction * distance;
+        gameObject.SetActive(true);
     }
 }
