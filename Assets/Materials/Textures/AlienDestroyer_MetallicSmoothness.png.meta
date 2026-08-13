@@ -110,5 +110,5 @@ AssetOrigin:
   productId: 131137
   packageName: Alien Ships Pack
   packageVersion: 1.0
-  assetPath: Assets/Autarca/AlienShipsPack/Textures/AlienDestroyer_MetallicSmoothness.png
+  assetPath: Assets/Materials/Textures/AlienDestroyer_MetallicSmoothness.png
   uploadId: 273678

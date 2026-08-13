@@ -37,7 +37,7 @@ public class Gun : MonoBehaviour
         GameObject bullet = PoolManager.Instance.GetObject(bulletPrefab, bulletPivot.position, true);
         bullet.transform.LookAt(targetPoint);
         bullet.SetActive(true);
-        animator.Play("Shoot", 0, 0f);
+        animator.Play("Shot", 0, 0f);
         SoundManager.instance.Play(SoundName);        
     }
     private void CheckEnemy(Collider collider)
